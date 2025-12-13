@@ -42,6 +42,10 @@ const userSchema = new mongoose.Schema({
             type: String,
             required: [true, "Zip code is required"],
         }
+    },
+    deletedAt: {
+        type: Date,
+        default: null,
     }
 
 }, { timestamps: true })
